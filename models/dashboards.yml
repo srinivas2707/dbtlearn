@@ -1,0 +1,14 @@
+version: 2
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    description: Executive Dashboard about Airbnb listings and hosts
+    url: https://f9975e59.us2a.app.preset.io/superset/dashboard/p/5g1naP7lymO/
+ 
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('full_moon_reviews')
+    owner:
+      name: Nagendra Srinivas
+      email: dbtnagendra@gmail.com
