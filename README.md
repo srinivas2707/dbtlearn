@@ -123,14 +123,16 @@ COPY INTO raw_hosts (id, name, is_superhost, created_at, updated_at)
 
 ## Code to test snapshots example 
 
+```sql
 UPDATE AIRBNB.RAW.RAW_LISTINGS SET MINIMUM_NIGHTS=30,
  updated_at=CURRENT_TIMESTAMP() WHERE ID=3176;
 SELECT * FROM AIRBNB.DEV.SCD_RAW_LISTINGS WHERE ID=3176;
 select * from AIRBNB.RAW.RAW_LISTINGS where id = 3176
 
 
+
 ## Profiles.yml 
-'''
+
 dbtlearn:
   outputs:
     dev:
@@ -145,4 +147,4 @@ dbtlearn:
       warehouse: COMPUTE_WH
   target: dev
 
-  '''
+  ```
