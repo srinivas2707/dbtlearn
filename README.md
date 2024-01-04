@@ -127,3 +127,20 @@ UPDATE AIRBNB.RAW.RAW_LISTINGS SET MINIMUM_NIGHTS=30,
  updated_at=CURRENT_TIMESTAMP() WHERE ID=3176;
 SELECT * FROM AIRBNB.DEV.SCD_RAW_LISTINGS WHERE ID=3176;
 select * from AIRBNB.RAW.RAW_LISTINGS where id = 3176
+
+
+#### profiles.yml 
+
+dbtlearn:
+  outputs:
+    dev:
+      account: jxufpga-hb65615
+      database: AIRBNB
+      password: dbtPassword123
+      role: TRANSFORM
+      schema: DEV
+      threads: 1
+      type: snowflake
+      user: dbt
+      warehouse: COMPUTE_WH
+  target: dev
