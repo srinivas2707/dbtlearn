@@ -1,0 +1,2 @@
+16:06:43 2 of 2 START sql table model raw.my_second_dbt_model ........................... [RUN]
+16:06:44 2 of 2 OK created sql table model raw.my_second_dbt_model ...................... [[32mSUCCESS 1[0m in 1.51s]
