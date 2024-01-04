@@ -124,7 +124,7 @@ COPY INTO raw_hosts (id, name, is_superhost, created_at, updated_at)
 ## Code to test snapshots example 
 
 ```sql
-UPDATE AIRBNB.RAW.RAW_LISTINGS SET MINIMUM_NIGHTS=40,
+UPDATE AIRBNB.RAW.RAW_LISTINGS SET MINIMUM_NIGHTS=50,
     updated_at=CURRENT_TIMESTAMP() WHERE ID=3176;
 SELECT * FROM AIRBNB.DEV.SCD_RAW_LISTINGS WHERE ID=3176;
 select * from AIRBNB.RAW.RAW_LISTINGS where id = 3176
