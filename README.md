@@ -130,7 +130,7 @@ select * from AIRBNB.RAW.RAW_LISTINGS where id = 3176
 
 
 ## Profiles.yml 
-
+'''
 dbtlearn:
   outputs:
     dev:
@@ -144,3 +144,5 @@ dbtlearn:
       user: dbt
       warehouse: COMPUTE_WH
   target: dev
+
+  '''
